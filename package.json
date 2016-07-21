@@ -1,5 +1,5 @@
 {
-  "name": "bokkusu",
+  "name": "bokkusu-js",
   "version": "0.1.0",
   "description": "a simple lightbox script in vanlilla js",
   "main": "index.js",
