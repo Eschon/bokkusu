@@ -1,6 +1,6 @@
 {
   "name": "bokkusu-js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "a simple lightbox script in vanlilla js",
   "main": "dist/bokkusu.js",
   "scripts": {
@@ -15,9 +15,8 @@
     "babel-cli": "6.11.4",
     "babel-preset-es2015": "6.9.0"
   },
-  "repository" :
-  {
-    "type" : "git",
-    "url" : "https://github.com/Eschon/bokkusu.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Eschon/bokkusu.git"
   }
 }
