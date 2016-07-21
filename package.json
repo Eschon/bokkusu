@@ -1,6 +1,6 @@
 {
   "name": "bokkusu-js",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "a simple lightbox script in vanlilla js",
   "main": "dist/bokkusu.js",
   "scripts": {
