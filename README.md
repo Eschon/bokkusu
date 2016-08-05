@@ -26,3 +26,4 @@ bokkusu('http://example.com/image.png');
 - [ ] make it work in script tag
 - [ ] simple gallery function for switching between images
 - [ ] add documentation
+- [ ] add some kind of error handling (missing/wrong options)
