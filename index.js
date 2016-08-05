@@ -25,6 +25,14 @@ function Bokkusu(elem, options) {
     image.setAttribute('src', elem);
     content.appendChild(image);
   }
+  if (mode == 'iframe') {
+    const iframe = document.createElement('iframe');
+    iframe.src = elem;
+    iframe.width = options.width;
+    iframe.height = options.height;
+    iframe.setAttribute('frameBorder', options.frameBorder || '0');
+    content.appendChild(iframe);
+  }
 
   const body = document.getElementsByTagName('body')[0];
   body.appendChild(overlay);

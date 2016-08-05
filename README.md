@@ -18,7 +18,7 @@ bokkusu('http://example.com/image.png');
 
 # Roadmap for 1.0 release
 - [ ] Add support for other content
-  - [ ] iframe
+  - [x] iframe
   - [ ] HTML
 - [ ] Browser support
   - [ ] Pick versions to support
