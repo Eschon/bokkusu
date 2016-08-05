@@ -23,6 +23,6 @@ bokkusu('http://example.com/image.png');
 - [ ] Browser support
   - [ ] Pick versions to support
   - [ ] Make sure supported versions work
-- [ ] make it work in script text-align
+- [ ] make it work in script tag
 - [ ] simple gallery function for switching between images
 - [ ] add documentation
