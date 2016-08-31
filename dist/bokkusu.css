@@ -37,3 +37,24 @@
   border-radius: 50%;
   cursor: pointer;
 }
+
+.bokkusu-next-button,
+.bokkusu-prev-button {
+  position: absolute;
+  display: inline-block;
+  width: 30px;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.5);
+  line-height: 100px;
+  top: calc(50% - 50px);
+  border-radius: 10px;
+  color: white;
+}
+
+.bokkusu-prev-button {
+  left: -35px;
+}
+
+.bokkusu-next-button {
+  right: -35px;
+}
