@@ -34,6 +34,26 @@ function Bokkusu(elem, options) {
     content.appendChild(iframe);
   }
 
+  if (options.next) {
+    const nextButton = document.createElement('span');
+    nextButton.textContent = '❯';
+    nextButton.classList.add('bokkusu-next-button');
+    nextButton.addEventListener('click', () => {
+      bokkusu(options.next.url, options.next.options);
+    });
+    content.appendChild(nextButton);
+  }
+
+  if (options.prev) {
+    const prevButton = document.createElement('span');
+    prevButton.textContent = '❮';
+    prevButton.classList.add('bokkusu-prev-button');
+    prevButton.addEventListener('click', () => {
+      bokkusu(options.prev.url, options.prev.options);
+    });
+    content.appendChild(prevButton);
+  }
+
   const body = document.getElementsByTagName('body')[0];
   body.appendChild(overlay);
 
@@ -43,3 +63,21 @@ function Bokkusu(elem, options) {
 Bokkusu.prototype.close = function close() {
   this.overlay.parentNode.removeChild(this.overlay);
 }
+
+function Gallery(array, loop) {
+  for (let i = 0; i < array.length; i++) {
+    if (!array[i].options) array[i].options = {};
+
+    if (i > 0) array[i].options.prev = array[i - 1];
+    else if (loop) array[i].options.prev = array[array.length - 1];
+
+    if (i < array.length - 1) array[i].options.next = array[i + 1];
+    else if (loop) array[i].options.next = array[0];
+  }
+
+  return array.map(item => {
+    return () => bokkusu(item.url, item.options);
+  });
+}
+
+export { Gallery };
