@@ -33,6 +33,9 @@ function Bokkusu(elem, options) {
     iframe.setAttribute('frameBorder', options.frameBorder || '0');
     content.appendChild(iframe);
   }
+  if (mode === 'dom') {
+    content.appendChild(elem);
+  }
 
   if (options.next) {
     const nextButton = document.createElement('span');
