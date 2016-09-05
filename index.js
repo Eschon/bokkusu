@@ -37,6 +37,10 @@ function Bokkusu(elem, options) {
     content.appendChild(elem);
   }
 
+  if (options.width) {
+    content.style.width = `${options.width}px`;
+  }
+
   if (options.next) {
     const nextButton = document.createElement('span');
     nextButton.textContent = '❯';
