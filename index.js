@@ -25,7 +25,7 @@ function Bokkusu(elem, options) {
     image.setAttribute('src', elem);
     content.appendChild(image);
   }
-  if (mode == 'iframe') {
+  if (mode === 'iframe') {
     const iframe = document.createElement('iframe');
     iframe.src = elem;
     iframe.width = options.width;
