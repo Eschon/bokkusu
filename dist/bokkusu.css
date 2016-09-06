@@ -49,6 +49,7 @@
   top: calc(50% - 50px);
   border-radius: 10px;
   color: white;
+  cursor: pointer;
 }
 
 .bokkusu-prev-button {
