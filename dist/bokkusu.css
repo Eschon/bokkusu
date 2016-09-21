@@ -23,6 +23,11 @@
   padding: 10px;
   border-radius: 10px;
   background-color: #fff;
+  max-width: calc(100% - 100px);
+}
+
+.bokkusu-content img {
+  max-width: 100%;
 }
 
 .bokkusu-close-button {
