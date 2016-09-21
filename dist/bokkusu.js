@@ -75,7 +75,8 @@ function Bokkusu(elem, options) {
   this.overlay = overlay;
 }
 
-Bokkusu.prototype.close = function close() {
+Bokkusu.prototype.close = function close(e) {
+  e.stopPropagation();
   this.overlay.parentNode.removeChild(this.overlay);
 };
 
