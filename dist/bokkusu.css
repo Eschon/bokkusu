@@ -7,6 +7,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
   z-index: 2147483647;
+  overflow: scroll;
 }
 
 .bokkusu-overlay::before {
