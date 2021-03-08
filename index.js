@@ -37,7 +37,7 @@ function Bokkusu(elem, options) {
     content.appendChild(elem);
   }
 
-  if (options.width) {
+  if (options.width && mode !== 'iframe') {
     content.style.width = `${options.width}px`;
   }
 
