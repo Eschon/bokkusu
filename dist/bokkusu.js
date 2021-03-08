@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = bokkusu;
 function bokkusu(elem) {
-  var options = arguments.length <= 1 || arguments[1] === undefined ? {} : arguments[1];
+  var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
 
   return new Bokkusu(elem, options);
 }
@@ -45,7 +45,7 @@ function Bokkusu(elem, options) {
     content.appendChild(elem);
   }
 
-  if (options.width) {
+  if (options.width && mode !== 'iframe') {
     content.style.width = options.width + 'px';
   }
 
